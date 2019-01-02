@@ -128,15 +128,6 @@ jQuery(document).ready(function(){
             var current_item = getSessionData('current_item');
             //console.log(current_item);
 
-            var items = [];
-            var categories = [];
-
-            // categories[category_id] = [
-            //     'id' = category_id,
-            //     'title' = current_item.title,
-            //     //'product_groups'=>     
-            // ];
-
             var wa_cart = getSessionData('wa_cart');
 
             if(wa_cart){
@@ -203,6 +194,7 @@ jQuery(document).ready(function(){
                             cart_category.product_groups = prepare_product_groups;
                         }
                     }
+
                     cart_items.push(cart_category);
                     setSessionData('wa_cart', cart_items);
                 });
