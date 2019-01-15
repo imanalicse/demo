@@ -173,6 +173,7 @@ jQuery(document).ready(function(){
                                 if(current_product_group.id == product_group_id){
                                     var prepare_products = [];
                                     var product_group_item = [];
+                                    //product_group_item.products = [];
                                     current_product_group.products.forEach(current_product => {
                                         if(current_product.id == product_id){
                                             var product = {
